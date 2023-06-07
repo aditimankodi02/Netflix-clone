@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url(header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px , 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 10%;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: white;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    height: 30px;
+}
+
+.lng-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+    padding: 7px 10px;
+    color: white;
+    border-radius: 4px;
+}
+
+.lng-btn img{
+    width: 10px;
+    margin-left: 10px;
+}
+
+.header-content{
+    position: relative;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-left: 50%;
+    width: 80%;
+}
+
+.header-content h1{
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 700;
+}
+
+.header-content h4{
+    font-weight: 20;
+    margin-bottom: 20px;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.header-content h5{
+    font-weight: 20;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.form{
+    height: 20%;
+    margin-left: 18%;
+    margin-right: 20%;
+    display: flex;
+    overflow: hidden;
+}
+
+.email{
+    flex: 1;
+    float: left;
+    width: 75%;
+}
+.start{
+    float: right;
+    width: 25%;
+    margin-right: 4%;
+}
+.email-btn input{
+    border-radius: 4px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    background: black;
+    opacity: 0.5;
+    border: 1px solid white;
+    padding: 15px 5px;
+    color: white;
+    border-radius: 4px;
+    height: 2%;
+}
+.start-btn button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    height: 45px;
+    padding: 10px 5px;
+    width: 100%;
+}
+/*-------features--------*/
+
+.features{
+    position: relative;
+    padding: 5px 12%;
+    font-size: 22px;
+    border-top: 6px solid #333;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 5%;
+    font-size: 22px;
+}
+
+.container{
+    position: relative;
+}
+
+.line{
+    border-top: 6px solid #333;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.row h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/*-------faq--------*/
+
+.faq{
+    padding: 5px 10%;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.accordian{
+    margin: 40px auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordian .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordian input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+
+}
+
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(45deg);
+}
+
+/*------form------*/
+
+.form-last{
+    height: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.last-signup{
+    text-align: center;
+}
+
+.last-signup h3{
+    font-weight: 20;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+/*-----footer-----*/
+
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.copy-text{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px; 
+}
+
+/*-----media queries-----*/
+
+@media only screen and (max-width : 600px){
+    .logo{
+        width: 100px;
+    }
+    nav button{
+        padding: 5px 10px;
+    }
+    nav .lng-btn{
+        padding: 4px 8px;
+    }
+    
+    .header-content{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+    .header-content h1{
+        font-size: 30px;
+    }
+    .email-btn{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    .text-col , .img-col{
+        flex-basis: 100%;
+    }
+}
